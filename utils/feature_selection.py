@@ -24,7 +24,7 @@ from sklearn.svm import SVC as SVM
 import warnings
 warnings.filterwarnings('ignore')
 
-%matplotlib inline
+# %matplotlib inline
 
 
 # model class for a FS solution
