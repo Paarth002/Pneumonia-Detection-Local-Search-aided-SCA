@@ -27,7 +27,7 @@ from utils.feature_selection import *
 import warnings
 warnings.filterwarnings('ignore')
 
-%matplotlib inline
+# %matplotlib inline
 
 def AbSCA(num_agents, max_iter, train_data, train_label, obj_function=compute_fitness, trans_func_shape='s'):
 
