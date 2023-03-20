@@ -105,6 +105,7 @@ def train_model(model, criterion, optimizer, data_loader, batch_size, num_epochs
             if phase == 'validation' and epoch_accuracy >= best_accuracy:
                 best_accuracy = epoch_accuracy
                 best_model_wts = copy.deepcopy(model.state_dict())
+                torch.save(best_model_wts, 'model.pt')
                 print(f'====> Best accuracy reached so far at Epoch {epoch+1} Accuracy = {best_accuracy:.6f}')
 
         print('-------------------------------------------------------------------------')
