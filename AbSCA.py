@@ -23,6 +23,7 @@ from sklearn.svm import SVC as SVM
 
 from utils import feature_selection
 from utils.feature_selection import *
+from local_search import *
 
 import warnings
 warnings.filterwarnings('ignore')
