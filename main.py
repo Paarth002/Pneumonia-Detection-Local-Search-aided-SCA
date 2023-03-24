@@ -135,7 +135,8 @@ features, true_labels = eval_model_extract_features(features, true_labels, model
 X, y = get_features(features, true_labels)
 
 # Applying Adaptive beta HC embedded Sine-Cosine Optimization Algorithm for FS
-soln_AbSCA = AbSCA(num_agents=20, max_iter=20, train_data=X, train_label=y)
+# soln_AbSCA = AbSCA(num_agents=20, max_iter=20, train_data=X, train_label=y)
+soln_AbSCA = AbSCA(num_agents=1, max_iter=1, train_data=X, train_label=y)
 
 # validate AbSCA feature selection
 agent = soln_AbSCA.best_agent.copy()
